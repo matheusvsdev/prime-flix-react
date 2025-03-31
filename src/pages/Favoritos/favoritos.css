@@ -1,0 +1,85 @@
+.meus-filmes {
+  display: flex; /* Torna os itens flexíveis */
+  flex-wrap: wrap; /* Permite quebra de linha, caso necessário */
+  gap: 14px; /* Define o espaçamento entre os filmes */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  max-width: 300px;
+  margin: 14px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.meus-filmes span {
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  max-height: 48px; /* Limita altura do título */
+  overflow: hidden; /* Oculta texto extra */
+  text-overflow: ellipsis; /* Adiciona "..." ao final */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.meus-filmes img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do artigo */
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.meus-filmes li {
+  display: flex; /* Flexbox para organizar os elementos dentro do <li> */
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 10px; /* Espaçamento entre os elementos internos */
+}
+
+.meus-filmes img {
+  width: 100%; /* Imagem ocupa toda a largura disponível */
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.meus-filmes div {
+  display: flex; /* Organiza os botões lado a lado */
+  justify-content: center; /* Espaçamento entre os botões */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.meus-filmes a {
+  display: inline-block;
+  background-color: #d2d2d3;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.meus-filmes a:hover {
+    background-color: #f8cb00;
+}
+
+.meus-filmes button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.meus-filmes button:hover {
+  background-color: #ff0000; /* Efeito visual ao passar o mouse */
+}

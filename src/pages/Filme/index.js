@@ -34,7 +34,7 @@ function Filme() {
     return () => {
       console.log("COMPONENTE FOI DESMONTADO");
     };
-  }, []);
+  }, [navigate, id]);
 
   if (loading) {
     return (
@@ -59,7 +59,15 @@ function Filme() {
       <div className="area-buttons">
         <button>Salvar</button>
         <button>
-          <a href="#">Trailer</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://youtube.com/results?search_query=${encodeURIComponent(
+              filme.title + " Trailer"
+            )}`}
+          >
+            Trailer
+          </a>
         </button>
       </div>
     </div>

@@ -1,0 +1,59 @@
+.lista-filmes {
+  display: flex; /* Torna os itens flexíveis */
+  flex-wrap: wrap; /* Permite quebra de linha, caso necessário */
+  gap: 14px; /* Define o espaçamento entre os filmes */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  max-width: 600px;
+  margin: 14px auto;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.lista-filmes article {
+  width: calc(50% - 14px); /* Filmes lado a lado */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  height: 500px; /* Altura fixa */
+  display: flex; /* Flexbox para layout interno */
+  flex-direction: column; /* Empilhar elementos verticalmente */
+  justify-content: space-between; /* Mantém distância entre os elementos */
+  overflow: hidden; /* Garante que conteúdo extra não ultrapasse o limite */
+}
+
+.lista-filmes strong {
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 22px;
+  max-height: 48px; /* Limita altura do título */
+  overflow: hidden; /* Oculta texto extra */
+  text-overflow: ellipsis; /* Adiciona "..." ao final */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.lista-filmes img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do artigo */
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.lista-filmes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 24px;
+  background-color: #f8cb00;
+  text-decoration: none;
+  color: #000;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

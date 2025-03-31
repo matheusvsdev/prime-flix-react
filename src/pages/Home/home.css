@@ -3,7 +3,7 @@
   flex-wrap: wrap; /* Permite quebra de linha, caso necessário */
   gap: 14px; /* Define o espaçamento entre os filmes */
   justify-content: center; /* Centraliza os itens horizontalmente */
-  max-width: 600px;
+  max-width: 900px;
   margin: 14px auto;
 }
 
@@ -15,11 +15,11 @@
 }
 
 .lista-filmes article {
-  width: calc(50% - 14px); /* Filmes lado a lado */
+  width: calc(25% - 5px); /* Filmes lado a lado */
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
-  height: 500px; /* Altura fixa */
+  height: 400px; /* Altura fixa */
   display: flex; /* Flexbox para layout interno */
   flex-direction: column; /* Empilhar elementos verticalmente */
   justify-content: space-between; /* Mantém distância entre os elementos */
@@ -27,9 +27,9 @@
 }
 
 .lista-filmes strong {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   max-height: 48px; /* Limita altura do título */
   overflow: hidden; /* Oculta texto extra */
   text-overflow: ellipsis; /* Adiciona "..." ao final */
@@ -56,4 +56,10 @@
   color: #000;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  transition: 0.4s;
+}
+
+.lista-filmes a:hover {
+  background-color: #000;
+  color: #fff;
 }

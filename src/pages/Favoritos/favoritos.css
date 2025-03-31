@@ -1,5 +1,7 @@
 .meus-filmes {
   display: flex; /* Torna os itens flexíveis */
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap; /* Permite quebra de linha, caso necessário */
   gap: 14px; /* Espaçamento entre os filmes */
   justify-content: center; /* Centraliza os itens horizontalmente */
